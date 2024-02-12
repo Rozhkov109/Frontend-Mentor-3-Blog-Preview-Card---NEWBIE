@@ -1,0 +1,67 @@
+/* fonts */
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/static/Figtree-SemiBold.ttf) format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: Figtree;
+  src: url(assets/fonts/static/Figtree-ExtraBold.ttf) format("truetype");
+  font-weight: 800;
+}
+
+/* wrapper */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.wrapper {
+  max-width: 350px;
+  margin: 50px auto;
+  border-radius: 20px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.content-wrapper {
+  margin: 0 20px;
+  font-family: Figtree;
+}
+
+.illustration {
+  max-width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.learning {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: hsl(47, 88%, 63%);
+}
+
+.date {
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 600;
+  color: hsl(0, 0%, 50%);
+}
