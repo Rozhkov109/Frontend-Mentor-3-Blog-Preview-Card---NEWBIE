@@ -22,10 +22,12 @@ html {
 }
 
 .wrapper {
-  max-width: 350px;
-  margin: 50px auto;
+  max-width: 370px;
+  margin: 150px auto 100px auto;
   border-radius: 20px;
   background-color: hsl(0, 0%, 100%);
+  border: 2px solid black;
+  box-shadow: 8px 8px black;
 }
 
 .content-wrapper {
@@ -42,7 +44,7 @@ html {
 
 .learning {
   display: inline-block;
-  padding: 5px 10px;
+  padding: 7px 13px;
   margin-bottom: 12px;
   border-radius: 5px;
   font-size: 14px;
@@ -57,11 +59,53 @@ html {
 h1 {
   font-size: 22px;
   font-weight: 800;
+  transition: color 0.5s ease;
 }
 
 p {
   font-size: 16px;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: normal;
   color: hsl(0, 0%, 50%);
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.my-photo {
+  display: inline-block;
+  max-width: 30px;
+  border-radius: 15px;
+}
+
+.author {
+  padding-left: 10px;
+  font-weight: 800;
+}
+
+/* footer */
+
+footer {
+  padding: 5px 0;
+  background-color: hsl(42, 70%, 48%);
+  font-family: Figtree;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* hover */
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
+/* styles for mobiles */
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    max-width: 330px;
+  }
 }
